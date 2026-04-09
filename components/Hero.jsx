@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-export default function Hero({ 
+export default function Hero({
   title = "We Build Brands That",
   highlight = "Dominate Digital",
   subtitle = "Vision Digital transforms ambitious businesses into market leaders through data-driven strategies, stunning design, and relentless performance optimization.",

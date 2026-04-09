@@ -14,7 +14,7 @@ export default function ContactPage() {
 
     const formData = new FormData(e.target)
     const result = await submitContact(formData)
-    
+
     setStatus(result)
     setLoading(false)
 
@@ -46,7 +46,7 @@ export default function ContactPage() {
             {/* Contact Form */}
             <div className="glass rounded-3xl p-8 md:p-10 relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-br from-[#6c5ce7]/5 to-transparent pointer-events-none" />
-              
+
               <div className="relative">
                 <h2 className="text-2xl font-bold text-white mb-2">Send Us a Message</h2>
                 <p className="text-[#8888a0] text-sm mb-8">Fill out the form below and we&apos;ll be in touch shortly.</p>
@@ -126,11 +126,10 @@ export default function ContactPage() {
                   {status && (
                     <div
                       id="form-status"
-                      className={`p-4 rounded-xl text-sm font-medium ${
-                        status.success
+                      className={`p-4 rounded-xl text-sm font-medium ${status.success
                           ? 'bg-[#00b894]/10 text-[#55efc4] border border-[#00b894]/20'
                           : 'bg-[#e17055]/10 text-[#fab1a0] border border-[#e17055]/20'
-                      }`}
+                        }`}
                     >
                       {status.message}
                     </div>

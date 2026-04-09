@@ -24,10 +24,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${inter.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col noise-bg">
+    <html lang="en" className={`${inter.variable} h-full antialiased overflow-x-hidden`}>
+      <body className="min-h-full flex flex-col noise-bg overflow-x-hidden w-full max-w-full">
         <Navbar />
-        <main className="flex-1">{children}</main>
+        <main className="flex-1 overflow-x-hidden w-full max-w-full">{children}</main>
         <Footer />
         <WhatsAppButton />
       </body>

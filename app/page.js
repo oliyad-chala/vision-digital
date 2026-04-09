@@ -145,7 +145,7 @@ export default function Home() {
           <div className="glass rounded-3xl p-8 md:p-16 relative overflow-hidden">
             {/* Background decoration */}
             <div className="absolute inset-0 bg-gradient-to-r from-[#6c5ce7]/10 via-transparent to-[#a29bfe]/10 pointer-events-none" />
-            
+
             <div className="relative text-center mb-12">
               <p className="text-[#6c5ce7] font-semibold text-sm uppercase tracking-widest mb-4">Proven Track Record</p>
               <h2 className="text-4xl md:text-5xl font-bold text-white">

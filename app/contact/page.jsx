@@ -26,14 +26,14 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative pt-40 pb-20 overflow-hidden">
+      <section className="relative pt-28 md:pt-40 pb-20 overflow-hidden">
         <div className="glow-orb w-[500px] h-[500px] bg-[#6c5ce7] top-[-100px] left-[-200px]" />
         <div className="max-w-7xl mx-auto px-6 relative">
           <p className="text-[#6c5ce7] font-semibold text-sm uppercase tracking-widest mb-4">Contact Us</p>
-          <h1 className="text-5xl md:text-7xl font-black text-white mb-6 leading-tight">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-black text-white mb-6 leading-[1.1] md:leading-tight">
             Let&apos;s Start Your <span className="gradient-text">Growth Journey</span>
           </h1>
-          <p className="text-[#8888a0] text-lg md:text-xl max-w-3xl leading-relaxed">
+          <p className="text-[#8888a0] text-base md:text-xl max-w-3xl leading-relaxed px-1">
             Ready to take your business to the next level? Drop us a message and we&apos;ll get back to you within 24 hours.
           </p>
         </div>

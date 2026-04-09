@@ -75,14 +75,14 @@ export default function PortfolioPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative pt-40 pb-20 overflow-hidden">
+      <section className="relative pt-28 md:pt-40 pb-20 overflow-hidden">
         <div className="glow-orb w-[500px] h-[500px] bg-[#a29bfe] top-[-100px] right-[-200px]" />
         <div className="max-w-7xl mx-auto px-6 relative">
           <p className="text-[#6c5ce7] font-semibold text-sm uppercase tracking-widest mb-4">Our Portfolio</p>
-          <h1 className="text-5xl md:text-7xl font-black text-white mb-6 leading-tight">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-black text-white mb-6 leading-[1.1] md:leading-tight">
             Work That <span className="gradient-text">Speaks for Itself</span>
           </h1>
-          <p className="text-[#8888a0] text-lg md:text-xl max-w-3xl leading-relaxed">
+          <p className="text-[#8888a0] text-base md:text-xl max-w-3xl leading-relaxed px-1">
             Every project is a partnership. Here are some of the businesses we&apos;ve helped transform through strategic digital marketing.
           </p>
         </div>
@@ -140,15 +140,15 @@ export default function PortfolioPage() {
       <section className="section relative">
         <div className="glow-orb w-[600px] h-[600px] bg-[#6c5ce7] top-[-200px] left-[50%] -translate-x-1/2" />
         <div className="max-w-4xl mx-auto px-6 text-center relative">
-          <h2 className="text-4xl md:text-5xl font-black text-white mb-6">
+          <h2 className="text-4xl md:text-5xl font-black text-white mb-6 leading-[1.1] md:leading-tight">
             Want Results Like <span className="gradient-text">These?</span>
           </h2>
-          <p className="text-[#8888a0] text-lg mb-10 max-w-2xl mx-auto">
+          <p className="text-[#8888a0] text-base md:text-lg mb-8 md:mb-10 max-w-2xl mx-auto px-2">
             Your success story could be next. Let&apos;s discuss how we can create a custom strategy for your business.
           </p>
-          <Link href="/contact" className="btn-primary text-lg" id="portfolio-cta">
+          <Link href="/contact" className="btn-primary text-base md:text-lg w-full sm:w-auto justify-center" id="portfolio-cta">
             Start Your Project
-            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <svg className="w-5 h-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
             </svg>
           </Link>

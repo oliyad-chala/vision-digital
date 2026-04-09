@@ -27,34 +27,34 @@ export default function Hero({
         }}
       />
 
-      <div className="relative max-w-7xl mx-auto px-6 pt-32 pb-20 text-center">
+      <div className="relative max-w-7xl mx-auto px-6 pt-24 md:pt-32 pb-20 text-center">
         {/* Badge */}
-        <div className="animate-fade-in-up inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-5 py-2 mb-8">
+        <div className="animate-fade-in-up inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-4 md:px-5 py-2 mb-6 md:mb-8">
           <span className="w-2 h-2 rounded-full bg-[#6c5ce7] animate-pulse" />
-          <span className="text-sm text-[#8888a0]">Digital Marketing Agency</span>
+          <span className="text-xs sm:text-sm text-[#8888a0]">Digital Marketing Agency</span>
         </div>
 
         {/* Heading */}
-        <h1 className="animate-fade-in-up delay-100 text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black leading-[1.05] tracking-tight mb-8">
+        <h1 className="animate-fade-in-up delay-100 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black leading-[1.1] md:leading-[1.05] tracking-tight mb-6 md:mb-8">
           <span className="text-white">{title}</span>
           <br />
           <span className="gradient-text">{highlight}</span>
         </h1>
 
         {/* Subtitle */}
-        <p className="animate-fade-in-up delay-200 text-lg md:text-xl text-[#8888a0] max-w-2xl mx-auto mb-12 leading-relaxed">
+        <p className="animate-fade-in-up delay-200 text-base sm:text-lg md:text-xl text-[#8888a0] max-w-2xl mx-auto mb-10 md:mb-12 leading-relaxed px-2">
           {subtitle}
         </p>
 
         {/* CTAs */}
-        <div className="animate-fade-in-up delay-300 flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Link href={ctaHref} id="hero-cta-primary" className="btn-primary text-lg">
+        <div className="animate-fade-in-up delay-300 flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-4">
+          <Link href={ctaHref} id="hero-cta-primary" className="btn-primary text-base sm:text-lg w-full sm:w-auto justify-center">
             {ctaText}
-            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <svg className="w-5 h-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
             </svg>
           </Link>
-          <Link href={secondaryHref} id="hero-cta-secondary" className="btn-secondary">
+          <Link href={secondaryHref} id="hero-cta-secondary" className="btn-secondary text-base sm:text-lg w-full sm:w-auto justify-center">
             {secondaryText}
           </Link>
         </div>

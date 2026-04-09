@@ -142,7 +142,7 @@ export default function Home() {
       {/* Stats / Results Section */}
       <section id="results-section" className="section-sm relative">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="glass rounded-3xl p-12 md:p-16 relative overflow-hidden">
+          <div className="glass rounded-3xl p-8 md:p-16 relative overflow-hidden">
             {/* Background decoration */}
             <div className="absolute inset-0 bg-gradient-to-r from-[#6c5ce7]/10 via-transparent to-[#a29bfe]/10 pointer-events-none" />
             
@@ -246,9 +246,9 @@ export default function Home() {
           <p className="text-[#8888a0] text-lg md:text-xl mb-10 max-w-2xl mx-auto">
             Get a free marketing audit and discover exactly how we can grow your business. No strings attached.
           </p>
-          <Link href="/contact" className="btn-primary text-lg" id="final-cta-button">
+          <Link href="/contact" className="btn-primary text-base sm:text-lg w-full sm:w-auto justify-center" id="final-cta-button">
             Get Your Free Audit
-            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <svg className="w-5 h-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
             </svg>
           </Link>

@@ -124,7 +124,7 @@ export default function ServicesPage() {
         <div className="glow-orb w-[500px] h-[500px] bg-[#6c5ce7] top-[-100px] left-[-200px]" />
         <div className="max-w-7xl mx-auto px-6 relative">
           <p className="text-[#6c5ce7] font-semibold text-sm uppercase tracking-widest mb-4">Our Services</p>
-          <h1 className="text-4xl sm:text-5xl md:text-7xl font-black text-white mb-6 leading-[1.1] md:leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-6 leading-[1.1] md:leading-tight">
             Everything You Need to <span className="gradient-text">Win Online</span>
           </h1>
           <p className="text-[#8888a0] text-base md:text-xl max-w-3xl leading-relaxed px-1">

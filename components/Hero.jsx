@@ -28,14 +28,8 @@ export default function Hero({
       />
 
       <div className="relative max-w-7xl mx-auto px-6 pt-24 md:pt-32 pb-20 text-center">
-        {/* Badge */}
-        <div className="animate-fade-in-up inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-4 md:px-5 py-2 mb-6 md:mb-8">
-          <span className="w-2 h-2 rounded-full bg-[#6c5ce7] animate-pulse" />
-          <span className="text-xs sm:text-sm text-[#8888a0]">Digital Marketing Agency</span>
-        </div>
-
         {/* Heading */}
-        <h1 className="animate-fade-in-up delay-100 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black leading-[1.1] md:leading-[1.05] tracking-tight mb-6 md:mb-8">
+        <h1 className="animate-fade-in-up delay-100 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-[1.1] md:leading-[1.05] tracking-tight mb-6 md:mb-8 caret-transparent select-none">
           <span className="text-white">{title}</span>
           <br />
           <span className="gradient-text">{highlight}</span>
@@ -59,12 +53,6 @@ export default function Hero({
           </Link>
         </div>
 
-        {/* Scroll indicator */}
-        <div className="animate-fade-in delay-600 absolute bottom-10 left-1/2 -translate-x-1/2">
-          <div className="w-6 h-10 rounded-full border-2 border-white/20 flex items-start justify-center p-2">
-            <div className="w-1 h-2 bg-[#6c5ce7] rounded-full animate-bounce" />
-          </div>
-        </div>
       </div>
     </section>
   )

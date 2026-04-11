@@ -27,7 +27,7 @@ export default function Navbar() {
     <nav
       id="main-navbar"
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled
-        ? 'glass py-3 shadow-lg shadow-black/20'
+        ? 'bg-[#0a0a0f] py-3 shadow-lg border-b border-white/10'
         : 'bg-transparent py-5'
         }`}
     >
@@ -87,13 +87,12 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile Menu */}
       <div
         id="mobile-menu"
         className={`md:hidden overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
           }`}
       >
-        <div className="glass mx-4 mt-3 rounded-2xl p-4 flex flex-col gap-1">
+        <div className="bg-[#13131a] mx-4 mt-3 rounded-2xl p-4 flex flex-col gap-1 shadow-xl border border-white/10">
           {links.map((link) => (
             <Link
               key={link.href}

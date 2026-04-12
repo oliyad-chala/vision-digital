@@ -56,39 +56,45 @@ const stats = [
 
 const projects = [
   {
-    title: 'E-Commerce Growth',
-    category: 'Paid Ads + SEO',
-    result: '+285% Revenue',
-    gradient: 'from-[#6c5ce7] to-[#74b9ff]',
-  },
-  {
-    title: 'Restaurant Chain',
-    category: 'Social Media',
-    result: '50K+ Followers',
+    title: 'Yummy Noodles',
+    category: 'Content Creation',
+    result: '529K Views',
+    link: 'https://tiktok.com/search?q=Yummy+Noodles',
     gradient: 'from-[#e17055] to-[#fdcb6e]',
   },
   {
-    title: 'SaaS Platform',
-    category: 'SEO + Content',
-    result: '#1 Google Ranking',
-    gradient: 'from-[#00b894] to-[#55efc4]',
+    title: 'Covenant Coffee',
+    category: 'Brand Content',
+    result: '673K Views',
+    link: 'https://tiktok.com/search?q=Covenant+Coffee',
+    gradient: 'from-[#6c5ce7] to-[#74b9ff]',
   },
   {
-    title: 'Fashion Brand',
-    category: 'Brand Identity',
-    result: '3x Brand Awareness',
-    gradient: 'from-[#a29bfe] to-[#fd79a8]',
-  },
-  {
-    title: 'Tech Startup',
-    category: 'Full Funnel',
-    result: '200+ Leads/Month',
+    title: 'Dureti Burgers',
+    category: 'Campaign Management',
+    result: '2.6M Views',
+    link: 'https://tiktok.com/search?q=Dureti+Burgers',
     gradient: 'from-[#0984e3] to-[#6c5ce7]',
   },
   {
-    title: 'Real Estate',
-    category: 'Google Ads',
-    result: '5x ROAS',
+    title: 'Arda Coffee',
+    category: 'Digital Presence',
+    result: '7.4K Profile Views',
+    link: 'https://tiktok.com/search?q=Arda+Coffee',
+    gradient: 'from-[#00b894] to-[#55efc4]',
+  },
+  {
+    title: 'Toran Ava',
+    category: 'Content Strategy',
+    result: '240K Video Views',
+    link: 'https://tiktok.com/search?q=Toran+Ava',
+    gradient: 'from-[#6c5ce7] to-[#e17055]',
+  },
+  {
+    title: 'Aymen Juice',
+    category: 'Social Media Management',
+    result: '1K+ New Followers',
+    link: 'https://tiktok.com/search?q=Aymen+Juice',
     gradient: 'from-[#fdcb6e] to-[#e17055]',
   },
 ]
@@ -185,9 +191,12 @@ export default function Home() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {projects.map((project, i) => (
-              <div
+              <a
+                href={project.link || '#'}
+                target="_blank"
+                rel="noopener noreferrer"
                 key={i}
-                className="group glass rounded-2xl overflow-hidden card-hover"
+                className="group glass rounded-2xl overflow-hidden card-hover block cursor-pointer"
                 id={`project-card-${i}`}
               >
                 {/* Gradient placeholder image */}
@@ -200,10 +209,10 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-white font-bold text-lg mb-1">{project.title}</h3>
+                  <h3 className="text-white font-bold text-lg mb-1 group-hover:text-[#a29bfe] transition-colors duration-300">{project.title}</h3>
                   <p className="text-[#6c5ce7] font-semibold text-sm">{project.result}</p>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
 

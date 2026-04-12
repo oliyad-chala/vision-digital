@@ -7,67 +7,68 @@ export const metadata = {
 
 const projects = [
   {
-    title: 'TechFlow E-Commerce',
-    category: 'Paid Ads + SEO',
-    description: 'Scaled an e-commerce platform from $50K to $200K monthly revenue through strategic Google Ads and comprehensive SEO optimization.',
-    result: '+285% Revenue',
-    gradient: 'from-[#6c5ce7] to-[#74b9ff]',
-  },
-  {
-    title: 'FreshBite Restaurant Chain',
-    category: 'Social Media',
-    description: 'Built a massive social media following for a restaurant chain, resulting in fully booked weekends and a 3x increase in foot traffic.',
-    result: '50K+ Followers',
+    title: 'Yummy Noodles',
+    category: 'Content Creation & Page Growth',
+    description: 'Produced high-quality reels emphasizing texture, steam, and serving moments. Implemented hashtag and caption strategies to improve discoverability. Maintained consistent posting schedule to build audience familiarity.',
+    result: '529K Views',
+    link: 'https://tiktok.com/search?q=Yummy+Noodles',
     gradient: 'from-[#e17055] to-[#fdcb6e]',
   },
   {
-    title: 'CloudSync SaaS',
-    category: 'SEO + Content Marketing',
-    description: 'Achieved #1 Google ranking for 15+ high-value keywords, driving 10,000+ organic visitors monthly to a B2B SaaS platform.',
-    result: '#1 Google Ranking',
-    gradient: 'from-[#00b894] to-[#55efc4]',
+    title: 'Covenant Coffee',
+    category: 'Brand Content & Product Promotion',
+    description: 'Captured aesthetic coffee photography and reels showcasing preparation and serving. Created story content to promote daily offers and customer interactions.',
+    result: '673K Views',
+    link: 'https://tiktok.com/search?q=Covenant+Coffee',
+    gradient: 'from-[#6c5ce7] to-[#74b9ff]',
   },
   {
-    title: 'StyleVault Fashion',
-    category: 'Brand Identity + Social',
-    description: 'Complete brand overhaul including new visual identity, social media strategy, and influencer partnerships that tripled brand awareness.',
-    result: '3x Brand Awareness',
+    title: 'Selam Cakes',
+    category: 'Brand Content & Product Promotion',
+    description: 'Showcased sweet bakery items through short-form reels. Highlights on presentation and texture to engage the local audience.',
+    result: '113K Views',
+    link: 'https://tiktok.com/search?q=Selam+Cakes',
     gradient: 'from-[#a29bfe] to-[#fd79a8]',
   },
   {
-    title: 'LaunchPad Tech',
-    category: 'Full Funnel Marketing',
-    description: 'Implemented a complete marketing funnel from awareness to conversion, generating over 200 qualified leads per month for a tech startup.',
-    result: '200+ Leads/Month',
+    title: 'Arda Coffee',
+    category: 'Digital Presence & Engagement',
+    description: 'Promotional graphic designs created for Arda Coffee to enhance visual identity, communicate offers, and strengthen the brand’s digital presence.',
+    result: '7,436 Profile Views',
+    link: 'https://tiktok.com/search?q=Arda+Coffee',
+    gradient: 'from-[#00b894] to-[#55efc4]',
+  },
+  {
+    title: 'Dureti Burgers',
+    category: 'Promotional Campaign Management',
+    description: 'Trend-based content to maximize algorithm reach. Short-form reels highlighting food presentation and dining experience.',
+    result: '2.6M Views',
+    link: 'https://tiktok.com/search?q=Dureti+Burgers',
     gradient: 'from-[#0984e3] to-[#6c5ce7]',
   },
   {
-    title: 'Prime Properties',
-    category: 'Google Ads + Landing Pages',
-    description: 'Created high-converting landing pages and Google Ads campaigns for a real estate firm, achieving a 5x return on ad spend.',
-    result: '5x ROAS',
+    title: 'Simple Restaurant',
+    category: 'Promotional Campaign Management',
+    description: 'Promotional campaigns designed to attract new visitors, increase brand curiosity and maximize audience retention.',
+    result: '211K Views',
+    link: 'https://tiktok.com/search?q=Simple+Restaurant',
     gradient: 'from-[#fdcb6e] to-[#e17055]',
   },
   {
-    title: 'FitZone Gym',
-    category: 'Social Media + Ads',
-    description: 'Launched a viral TikTok campaign and Meta Ads strategy that brought in 500+ new gym members in a single quarter.',
-    result: '500+ New Members',
+    title: 'Toran Ava',
+    category: 'Content Strategy & Visual Branding',
+    description: 'Consistent posting to maintain visibility. Managed audience engagement through comments and messages to build a loyal community.',
+    result: '240K Video Views',
+    link: 'https://tiktok.com/search?q=Toran+Ava',
     gradient: 'from-[#6c5ce7] to-[#e17055]',
   },
   {
-    title: 'GreenLeaf Organic',
-    category: 'E-Commerce + SEO',
-    description: 'Built and optimized a Shopify store for an organic food brand, growing monthly sales from $10K to $85K in 6 months.',
-    result: '750% Sales Growth',
+    title: 'Aymen Juice',
+    category: 'Full Social Media Management',
+    description: 'Complete hands-on management including TikTok performance tracking, engaging content production, and trend adaptation.',
+    result: '1,080 New Followers',
+    link: 'https://tiktok.com/search?q=Aymen+Juice',
     gradient: 'from-[#00b894] to-[#6c5ce7]',
-  },
-  {
-    title: 'NovaPay Fintech',
-    category: 'Brand + Web Design',
-    description: 'Designed a premium brand identity and website for a fintech startup, leading to a successful $2M seed funding round.',
-    result: '$2M Funding Raised',
-    gradient: 'from-[#74b9ff] to-[#a29bfe]',
   },
 ]
 
@@ -93,10 +94,13 @@ export default function PortfolioPage() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {projects.map((project, i) => (
-              <div
+              <a
+                href={project.link || '#'}
+                target="_blank"
+                rel="noopener noreferrer"
                 key={i}
                 id={`portfolio-item-${i}`}
-                className="group glass rounded-2xl overflow-hidden card-hover"
+                className="group glass rounded-2xl overflow-hidden card-hover block cursor-pointer"
               >
                 {/* Gradient visual */}
                 <div className={`h-56 bg-gradient-to-br ${project.gradient} relative overflow-hidden`}>
@@ -130,7 +134,7 @@ export default function PortfolioPage() {
                     {project.description}
                   </p>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>

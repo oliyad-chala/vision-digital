@@ -1,6 +1,8 @@
+import Link from 'next/link'
+
 export default function ServiceCard({ icon, title, description }) {
   return (
-    <div className="group glass rounded-2xl p-8 card-hover relative overflow-hidden" id={`service-card-${title?.toLowerCase().replace(/\s+/g, '-')}`}>
+    <Link href="/services" className="group glass rounded-2xl p-8 card-hover relative overflow-hidden block cursor-pointer" id={`service-card-${title?.toLowerCase().replace(/\s+/g, '-')}`}>
       {/* Hover gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#6c5ce7]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
       
@@ -28,6 +30,6 @@ export default function ServiceCard({ icon, title, description }) {
           </svg>
         </div>
       </div>
-    </div>
+    </Link>
   )
 }
